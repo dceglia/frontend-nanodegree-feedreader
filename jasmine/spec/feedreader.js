@@ -1,13 +1,7 @@
 /* feedreader.js
  *
- * This is the spec file that Jasmine will read and contains
- * all of the tests that will be run against your application.
- */
+ * This is the spec file that Jasmine will read against the application. */
 
-/* We're placing all of our tests within the $() function,
- * since some of these tests may require DOM elements. We want
- * to ensure they don't run until the DOM is ready.
- */
 $(function() {
     /* This is our first test suite - a test suite just contains
     * a related set of tests. This suite is all about the RSS
@@ -72,7 +66,7 @@ $(function() {
     });
 
 
-    /* A new test suite named "Initial Entries" */
+    /* A test suite for feed entries */
     describe('Initial Entries', function() {
         let feed = document.querySelector('.feed');
 
@@ -86,17 +80,36 @@ $(function() {
         /* A test that ensures when the loadFeed
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container. */
-        it('exist in the feed', function () {
+        it('exist in the feed', function() {
             expect(feed.children).toBeDefined();
         });
     });
 
 
-    /* TODO: Write a new test suite named "New Feed Selection" */
+    /* A test suite to verify feed entries are varied */
+    describe('New Feed Selection', function() {
+        let docBody = document.querySelector('body');
+        let firstFeed,
+            secondFeed;
 
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
-         */
+
+        // creation of async function
+        beforeEach(function(done) {
+            loadFeed(0, function() {
+                firstFeed = docBody.querySelector('.feed').innerHTML;
+                done();
+            });
+            loadFeed(1,function() {
+                secondFeed = docBody.querySelector('.feed').innerHTML;
+                done();
+            });
+        });
+
+        /* A test that ensures when a new feed is loaded
+         * by the loadFeed function that the content actually changes. */
+        it('verifies entries are different', function() {
+            expect(firstFeed).not.toBe(secondFeed);
+        });
+    });
 
 }());
