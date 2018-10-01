@@ -1,7 +1,20 @@
-# Project Overview
+# FEND - Feedreader Testing Project
+===================================
 
-In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
+## Table of Contents
 
+* [General](#general)
+* [Why this Project](#why)
+* [Instructions](#instructions)
+* [How to complete](#howto)
+* [Installing](#installing)
+* [Contributing](#contributing)
+* [Credits](#credits)
+* [Future Improvements](#improvements)
+
+## General
+
+In this project, I was given a web-based application that reads RSS feeds. The made-up back story behind the project is that the original developer of this application already included [Jasmine](http://jasmine.github.io/) and started writing their first test suite. Unfortunately, they decided to move on to start their own company and you are left with an application with an incomplete test suite. This is my attempt at creating a Jasmine test suite for the Feedreader project without using jQuery.
 
 ## Why this Project?
 
@@ -9,19 +22,7 @@ Testing is an important part of the development process and many organizations p
 
 Whether you work in an organization that uses test-driven development or in an organization that uses tests to make sure future feature development doesn't break existing features, it's an important skill to have!
 
-
-## What will I learn?
-
-You will learn how to use Jasmine to write a number of tests against a pre-existing application. These will test the underlying business logic of the application as well as the event handling and DOM manipulation.
-
-
-## How will this help my career?
-
-* Writing effective tests requires analyzing multiple aspects of an application including the HTML, CSS and JavaScript - an extremely important skill when changing teams or joining a new company.
-* Good tests give you the ability to quickly analyze whether new code breaks an existing feature within your codebase, without having to manually test all of the functionality.
-
-
-# How will I complete this project?
+## How to complete this project?
 
 Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric)
 
@@ -46,3 +47,20 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 19. Implement error handling for undefined variables and out-of-bound array access.
 20. When complete - all of your tests should pass. 
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
+
+## Installing
+
+To run locally, you can clone or download my version @ https://github.com/dceglia/frontend-nanodegree-feedreader. After opening the folder containing the files, select index.html and open with your preferred browser. If you've received a zipped copy, unzip, select index.html and open in your browser.
+
+## Contributing
+
+This repository is my attempt at Project 4 as a Udacity FEND student. Therefore, the project is currently not open for contribution.
+
+## Credits
+
+Thanks go out to Ryan B for his time spent on the P4 walk-through. Also, thanks to Matt Cranford for his walk-through blog.
+
+## Future improvements
+
+- time spent breaking my code
+- an implementation only with jQuery
