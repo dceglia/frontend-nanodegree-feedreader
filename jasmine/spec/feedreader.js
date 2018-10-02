@@ -82,7 +82,7 @@ $(function() {
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container. */
         it('exist in the feed', function() {
-            expect(feed.children).toBeDefined();
+            expect('.feed .entry').toBeDefined();
         });
     });
 
