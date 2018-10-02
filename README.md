@@ -58,7 +58,7 @@ This repository is my attempt at Project 4 as a Udacity FEND student. Therefore,
 
 ## Credits
 
-Thanks go out to Ryan B for his time spent on the P4 walk-through. Also, thanks to Matt Cranford for his walk-through blog.
+Thanks go out to Ryan B, Mohamed Riaad, Alain Cadenat and Lloan Alas for their time spent on P4 walk-throughs. Also, thanks to Matt Cranford for his walk-through blog.
 
 ## Future improvements
 
