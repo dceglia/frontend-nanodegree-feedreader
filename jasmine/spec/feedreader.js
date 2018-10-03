@@ -68,9 +68,6 @@ $(function() {
     /* A test suite for feed entries */
     describe('Initial Entries', function() {
 
-        // variable for the feed
-        let feed = document.querySelector('.feed');
-
         // creation of async beforeEach function
         beforeEach(function(done) {
             loadFeed(0, function() {
@@ -95,16 +92,17 @@ $(function() {
         let firstFeed,
             secondFeed;
 
-
         // creation of async function
         beforeEach(function(done) {
+
+            // loading of the first and second feeds
             loadFeed(0, function() {
                 firstFeed = docBody.querySelector('.feed').innerHTML;
-                done();
-            });
-            loadFeed(1,function() {
-                secondFeed = docBody.querySelector('.feed').innerHTML;
-                done();
+
+                loadFeed(1,function() {
+                    secondFeed = docBody.querySelector('.feed').innerHTML;   
+                    done();
+                });
             });
         });
 
